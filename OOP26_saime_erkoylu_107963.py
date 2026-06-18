@@ -225,7 +225,7 @@ class HistoryScreen(ctk.CTkFrame):
 
         # Textbox
         self.history_textbox = ctk.CTkTextbox(self, width=450, height=450, font=("Courier New", 12),
-                                              fg_color=COLOR_FRAME, text_color=COLOR_TEXT[0],
+                                              fg_color=COLOR_FRAME, text_color=COLOR_TEXT,
                                               border_width=1, border_color=COLOR_BORDER)
         self.history_textbox.pack(pady=15, padx=20)
         self.history_textbox.configure(state="disabled")
