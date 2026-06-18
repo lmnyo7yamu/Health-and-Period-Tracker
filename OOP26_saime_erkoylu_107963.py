@@ -15,7 +15,7 @@ COLOR_MUTED = ("#6b7280", "#a0a0a0")  # Secondary/gray text
 COLOR_PRIMARY = ("#4f46e5", "#3a406f")  # Main buttons
 COLOR_HOVER = ("#6366f1", "#535c9d")  # Main buttons hover state
 COLOR_ACCENT_1 = ("#0d9488", "#40a798")  # Turquoise accent (+)
-COLOR_ACCENT_2 = ("#e11d48", "#b83b5e")  # Rose red accent (-)
+COLOR_ACCENT_2 = ("#e11d48", "#b83b5e")  # Rose-red accent (-)
 COLOR_SAVE = ("#16a34a", "#18b87e")  # Save button
 
 # General font settings
@@ -225,7 +225,7 @@ class HistoryScreen(ctk.CTkFrame):
 
         # Textbox
         self.history_textbox = ctk.CTkTextbox(self, width=450, height=450, font=("Courier New", 12),
-                                              fg_color=COLOR_FRAME, text_color=COLOR_TEXT,
+                                              fg_color=COLOR_FRAME, text_color=COLOR_TEXT[0],
                                               border_width=1, border_color=COLOR_BORDER)
         self.history_textbox.pack(pady=15, padx=20)
         self.history_textbox.configure(state="disabled")
